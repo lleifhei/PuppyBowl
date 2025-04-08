@@ -6,7 +6,6 @@ import AllPlayers from "./components/AllPlayers";
 import NavBar from "./components/NavBar";
 import './App.css'
 
-// https://fsa-puppy-bowl.herokuapp.com/api/2412-FTB-MT-WEB-PT-PUPPIES/players
 
 function App() {
     const [players, setPlayers] = useState([]);
