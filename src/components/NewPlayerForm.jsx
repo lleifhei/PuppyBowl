@@ -16,7 +16,11 @@ export default function NewPlayerForm() {
         placeholder="Enter player's name"
         required
       />
-      <button type="submit">Add Player</button>
+      <button type="submit" onSubmit={
+        () => {
+          console.log("Name: ", name)
+        }
+      }>Add Player</button>
     </form>
   )
 }
