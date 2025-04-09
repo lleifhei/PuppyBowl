@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router";
 
 
 export default function AllPlayers() {
@@ -19,14 +20,14 @@ export default function AllPlayers() {
       <h2>All Players</h2>
       <div className="players-list">
         {players.map((player) => (
-          <div key={player.id} className="player-card">
+          <Link key={player.id} className="player-card">
             <h3>{player.name}</h3>
             <img src={player.imageUrl} alt={player.name} />
             <button 
               onClick={() => alert(JSON.stringify(player, null, 2))}>
               See Details
             </button>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
